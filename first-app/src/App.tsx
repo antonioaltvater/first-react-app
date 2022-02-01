@@ -1,11 +1,15 @@
 import React from 'react';
 
+import { BrowserRouter, BrowserRouter as Router} from "react-router-dom"
+import MainRoutes from './routes/index';
 
 
 function App() {
   return (
-  
-    <h1>Hello World</h1>
+  <BrowserRouter>
+  <MainRoutes/>
+  </BrowserRouter>
+
   );
 }
 
