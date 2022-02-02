@@ -33,15 +33,21 @@
         "import/prefer-default-export" : "off",
         "import/resolver": [
             "error",
-            "ignorePackages", {
-                "ts": "never",
-                "tsx": "never"
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
             }
         ]
     },
-    "settings": {
-        "import/resolver": {
-            "typescript": {}
-        }
+ "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {}
     }
+  }
 }
